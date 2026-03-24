@@ -1,0 +1,54 @@
+{
+  "data_dir": "/Users/peng/tmp/tushare_local_backtest_data_cache.db",
+  "output_dir": "outputs",
+  "tushare_token_env": "TUSHARE_TOKEN",
+  "optional_endpoints": {
+    "namechange_for_st": false
+  },
+  "data_sync": {
+    "start_date": "1990-01-01",
+    "end_date": "today",
+    "request_interval_seconds": 0.05,
+    "retry_times": 5,
+    "retry_backoff_seconds": 0.6
+  },
+  "backtest": {
+    "start_date": "2023-01-01",
+    "end_date": "2023-12-31",
+    "initial_cash": 300000.0,
+    "commission_rate": 0.0003,
+    "tax_rate": 0.001,
+    "min_commission": 5.0,
+    "progress_log_interval": 20
+  },
+  "strategy": {
+    "display_top_n": 3,
+    "auto_buy_stock_count": 3,
+    "initial_position_amount": 30000.0,
+    "grid_trade_amount": 10000.0,
+    "grid_atr_period": 14,
+    "grid_atr_multiplier": 0.5,
+    "grid_sell_profit_ratio": 1.01,
+    "grid_risk_control_ratio": 0.8,
+    "breakout_doubled_ratio": 2.0,
+    "breakout_reduction_ratio": 0.3333333333,
+    "breakout_volume_threshold": 2.5,
+    "breakout_decline_threshold": 0.05,
+    "breakout_turnover_threshold": 10.0,
+    "breakout_target_hold_count": 3,
+    "ma_fitting_threshold": 0.1,
+    "ma_fitting_min_months": 24,
+    "ma_periods": [5, 10, 20, 30, 60],
+    "volume_check_days": 15,
+    "max_pe_ratio": 20.0,
+    "price_position_threshold": 0.4,
+    "min_per_capital_amount": 220000.0,
+    "min_roe": 0.1,
+    "roe_years": 3,
+    "filter_new_stock_days": 375,
+    "filter_kcbj": true,
+    "filter_st": true,
+    "use_namechange_for_st_filter": false,
+    "approximation_mode": "daily"
+  }
+}

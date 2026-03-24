@@ -1,0 +1,55 @@
+name: 缺陷报告
+description: 提交一个可以复现的问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 直接说明问题是什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 按顺序写清楚怎么复现
+      placeholder: |
+        1. 执行了什么命令
+        2. 修改了什么配置
+        3. 看到了什么报错
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志或截图
+      description: 不要贴真实 Token 或敏感数据
+
+  - type: textarea
+    id: env
+    attributes:
+      label: 环境信息
+      placeholder: |
+        - 操作系统
+        - Python 版本
+        - Node 版本
+        - 是否使用 Tushare

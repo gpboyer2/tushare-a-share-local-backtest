@@ -1,0 +1,11 @@
+{
+  "name": "@ppll-chinese-a/contracts",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./workbench": "./src/workbench.ts"
+  }
+}
